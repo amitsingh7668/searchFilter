@@ -44,15 +44,16 @@ class App extends Component {
         <ul>
           <li style={{position:'relative',left:'10vh'}}>
             <span style={styleInfo}>{data.name}</span>
-
           </li>
         </ul>
       </div>
       )
-    })
+  
+    }
+    )
 
     return (
-      <div>
+      <div class="center">
       <input type="text" placeholder="Enter item to be searched" style={elementStyle} onChange={(e)=>this.searchSpace(e)} />
       {items}
       </div>
